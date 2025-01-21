@@ -7,9 +7,11 @@ This code implements **TEAL** - Simple and effective selection strategy for expe
 TEAL operates in a Continual Learning environment, leveraging the trained model after each task to extract features. In an iterative process for each class, it clusters the data into 
 𝑘 clusters and selects the most typical (densest) sample from each uncovered cluster. TEAL constructs a diverse, representative set of exemplars for the memory buffer, which is later used when the model learns new tasks. This method is particularly effective for small buffer sizes but can also benefit larger buffers.
 
+TEAL selection process illustration:
 <img src="./gif_toy_example.gif" height="150">
 
-<img src="./teal_results.png" height="220">
+TEAL main results of improving the performance of ER-IL methods:
+<img src="./teal_results.png" height="320">
 
 ## Getting Started
 
