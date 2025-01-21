@@ -1,0 +1,17 @@
+SELECTION_STRATEGY:
+    PARAMS_DICT:
+      dataset: [ "cifar100" ]  # change to "tinyimg" for TinyImageNet or to "cub200" for CUB200
+      algorithm: [ "naive_replay" ]
+      buffer: [ "300" ]  # change buffer size as you wish
+      sel_strategy: [ "teal" ]  # change to the desired selection strategy
+      num_experiences: [ "10" ]  # define how many tasks you want to split the dataset into
+      inc_model: [ "slim_resnet18" ]  # change to the desired incremental model
+
+CIL_BASELINES:
+    PARAMS_DICT:
+      dataset: [ "cifar100" ]  # change to "tinyimg" for TinyImageNet or to "cub200" for CUB200
+      algorithm: [ "er_ace", "er" ]  # change to the desired CIL algorithm
+      buffer: [ "300" ]  # change buffer size as you wish
+      sel_strategy: [ "teal" ]  # change to the desired selection strategy
+      num_experiences: [ "10" ]  # define how many tasks you want to split the dataset into
+      inc_model: [ "resnet18" ]  # change to the desired incremental model
