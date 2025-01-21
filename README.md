@@ -1,12 +1,19 @@
 # TEAL Official Code Repository
 
-This is the official implementation for the paper **TEAL: New Selection Strategy for Small Buffers in Experience Replay Class Incremental Learning**.
+This is the official implementation for the paper **TEAL: New Selection Strategy for Small Buffers in Experience Replay Class Incremental Learning**. [**Arxiv link**](https://arxiv.org/abs/2407.00673)
 
 This code implements **TEAL** - Simple and effective selection strategy for experience replay methods.
 
-This repository provides two experimental frameworks as described in the paper. The frameworks allow you to explore and compare different methods in Class Incremental Learning (CIL), focusing on the evaluation of TEAL selection strategy.
+TEAL operates in a Continual Learning environment, leveraging the trained model after each task to extract features. In an iterative process for each class, it clusters the data into 
+𝑘 clusters and selects the most typical (densest) sample from each uncovered cluster. TEAL constructs a diverse, representative set of exemplars for the memory buffer, which is later used when the model learns new tasks. This method is particularly effective for small buffer sizes but can also benefit larger buffers.
+
+<img src="./gif_toy_example.gif" height="150">
+
+<img src="./teal_results.png" height="220">
 
 ## Getting Started
+
+This repository provides two experimental frameworks as described in the paper. The frameworks allow you to explore and compare different methods in Class Incremental Learning (CIL), focusing on the evaluation of TEAL selection strategy.
 
 ### Setup
 
