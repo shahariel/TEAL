@@ -1,6 +1,10 @@
-# TEAL Experiment Framework
+# TEAL Official Code Repository
 
-This repository provides two experimental frameworks as described in the paper "TEAL". The frameworks allow you to explore and compare different methods in Class Incremental Learning (CIL), focusing on the evaluation of TEAL selection strategy.
+This is the official implementation for the paper **TEAL: New Selection Strategy for Small Buffers in Experience Replay Class Incremental Learning**.
+
+This code implements **TEAL** - Simple and effective selection strategy for experience replay methods.
+
+This repository provides two experimental frameworks as described in the paper. The frameworks allow you to explore and compare different methods in Class Incremental Learning (CIL), focusing on the evaluation of TEAL selection strategy.
 
 ## Getting Started
 
